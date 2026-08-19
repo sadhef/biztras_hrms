@@ -34,8 +34,11 @@ const AuthLayout = ({ children }) => (
 
       <div className="relative max-w-[470px]">
         <div className="mb-[22px] h-1 w-[52px] bg-[var(--pri)]" />
-        <h2 className="m-0 text-[42px] font-semibold leading-[1.18] tracking-[-0.02em]">Your workday,<br />engineered simple.</h2>
-        <p className="mt-[18px] text-[16.5px] leading-[1.7] text-[#A9B7D6]">Attendance, leave, payroll and requests, all in one console for the whole team.</p>
+        <h2 className="m-0 text-[46px] font-normal leading-[1.14] tracking-[-0.02em] text-[#A9B7D6]" style={{ textWrap: 'balance' }}>
+          Your workday,<br />
+          <span className="font-bold text-[#EDF1F9]">engineered</span> <span className="font-bold text-[var(--pri)]">simple.</span>
+        </h2>
+        <p className="mt-[18px] max-w-[400px] text-[16.5px] leading-[1.7] text-[#A9B7D6]" style={{ textWrap: 'pretty' }}>Attendance, leave, payroll and requests, all in one console for the whole team.</p>
       </div>
 
       <div className="relative text-[13px] text-[#7A8CB4]">&copy; {new Date().getFullYear()} Biztras</div>
